@@ -1,8 +1,7 @@
 # Secretkeeper  
 
-Java webapp with DB connection.  
+Java webapp with DB connection. (learning/testing project)  
 Technologies: Maven + SpringBoot + JSP + Hibernate + MySQL.  
-("learning/testing project")  
   
   
 --- Longer Description ---  
