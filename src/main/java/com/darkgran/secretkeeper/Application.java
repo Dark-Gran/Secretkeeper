@@ -1,4 +1,5 @@
 package com.darkgran.secretkeeper;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

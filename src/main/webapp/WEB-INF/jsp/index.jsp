@@ -5,7 +5,13 @@
 </head>
 
 <body>
-    Hello World.
+    <center>
+    ${secret}<br>
+    <form method="post">
+        New secret: <input type="text" name="newSecretContent" />
+        <input type="submit" />
+    </form>
+    </center>
 </body>
 
 </html>
