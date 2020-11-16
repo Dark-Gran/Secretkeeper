@@ -1,0 +1,2 @@
+If Jasypt encryption is used, the app must be run using the encryption key for DB password.
+(Best to store in a vault and/or on a different machine.)
