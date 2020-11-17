@@ -11,6 +11,7 @@ public class Secret {
 
     private Timestamp timestamp;
 
+    @Convert(converter = AttributeEncryptor.class)
     private String secret;
 
     public Integer getId() {

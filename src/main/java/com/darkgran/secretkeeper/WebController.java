@@ -17,10 +17,6 @@ public class WebController {
 
     @RequestMapping(value="/", method=RequestMethod.GET)
     public String index(Map<String, Object> model) {
-
-        Secret secret = secretRepository.findAll().get(0);
-        model.put("secret", secret.getSecret());
-
         return "index";
     }
 
@@ -28,17 +24,20 @@ public class WebController {
     public String submit(Map<String, Object> model, @RequestParam String newSecretContent) {
 
         Secret secret = secretRepository.findAll().get(0);
+
         if (validSecretContent(newSecretContent)) {
 
+            model.put("message", secret.getSecret());
             secret.setSecret(newSecretContent);
             secret.setTimestamp(new Timestamp(new Date().getTime()));
             secretRepository.save(secret);
-            model.put("result", "Secret accepted.");
+            return "result";
 
         } else {
-            model.put("result", "Invalid secret!");
+            model.put("message", "No secrets, no trade...");
+            return "index";
         }
-        return "result";
+
     }
 
     private boolean validSecretContent(String secret) {
