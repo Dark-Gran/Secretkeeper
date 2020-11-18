@@ -7,6 +7,7 @@ import java.sql.Timestamp;
 @Table(name="secrets")
 public class Secret {
     @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
 
     private Timestamp timestamp;

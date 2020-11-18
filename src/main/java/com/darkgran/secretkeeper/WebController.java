@@ -41,7 +41,7 @@ public class WebController {
     }
 
     private boolean validSecretContent(String secret) {
-        return (secret != null && !secret.equals(""));
+        return (secret != null && !secret.equals("")); //TODO: minimal length etc
     }
 
 }
