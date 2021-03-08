@@ -1,6 +1,6 @@
 # Secretkeeper  0.1
   
-Java webapp with DB connection and basic encryption.  
+Tiny java webapp with DB connection and basic encryption.  
 (learning/testing project)  
   
 Tech.: Maven + SpringBoot + JSP + Tomcat + Hibernate + MySQL.  
