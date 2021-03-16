@@ -3,7 +3,7 @@
 Tiny java webapp with DB connection and basic encryption.  
 (learning/testing project)  
   
-Tech.: Maven + SpringBoot + JSP + Tomcat + Hibernate + MySQL.  
+Written in Java with: Maven + SpringBoot + JSP + Tomcat + Hibernate + MySQL.  
 Made in IntelliJ IDEA Community Edition under MIT License.  
   
   
