@@ -1,3 +1,4 @@
 # Project exclude paths
 /target/
 /config/application.properties
+/src/main/resources/application.properties
